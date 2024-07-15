@@ -55,6 +55,7 @@ android {
             signingConfig = signingConfigs.named("debug").get()
             // Ensure Baseline Profile is fresh for release builds.
             baselineProfile.automaticGenerationDuringBuild = true
+            resValue("string", "app_name_display", "@string/app_name")
         }
     }
 
